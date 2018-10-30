@@ -1,5 +1,6 @@
 package com.husen.twelvejpa.dao.entity.admin;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.husen.twelvejpa.converter.AdminConverter;
 import com.husen.twelvejpa.dao.entity.BaseEntity;
 import com.husen.twelvejpa.enums.AdminStatus;
@@ -25,6 +26,7 @@ public class AdminEntity extends BaseEntity {
     @Column(name = "password", nullable = false, length = 16)
     private String password;
 
+    @JsonIgnore
     @Column(name = "admin_status", nullable = false, length = 1, columnDefinition = "int not null COMMENT '" + AdminStatus.Doc + "'")
     @Convert(converter = AdminConverter.class)
     private AdminStatus adminStatus;

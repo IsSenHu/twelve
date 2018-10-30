@@ -9,4 +9,6 @@ import org.springframework.stereotype.Repository;
 @Repository
 public interface AdminMapper {
     void save(AdminDto adminDto);
+
+    AdminDto findById(Long id);
 }

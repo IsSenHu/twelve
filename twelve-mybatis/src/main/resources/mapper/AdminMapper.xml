@@ -3,8 +3,19 @@
 
 <!--suppress ALL -->
 <mapper namespace="com.husen.twelvemybatis.dao.mapper.AdminMapper">
-    <insert id="save" parameterType="com.husen.mybatis.dto.admin.AdminDto">
+    <insert id="save" parameterType="com.husen.twelvemybatis.dao.dto.admin.AdminDto">
         INSERT INTO t_admin (id, admin_name, password, admin_status, create_time, update_time)
-                VALUES (#{id}, #{admin_name}, #{password}, #{admin_status}, #{create_time}, #{update_time})
+                VALUES (#{id}, #{adminName}, #{password}, #{adminStatus}, #{createTime}, #{updateTime})
     </insert>
+
+    <select id="findById" parameterType="java.lang.Long" resultType="com.husen.twelvemybatis.dao.dto.admin.AdminDto">
+        SELECT
+            id AS id,
+            admin_name AS adminName,
+            password AS password,
+            admin_status AS adminStatus,
+            create_time AS createTime,
+            update_time AS updateTime
+        FROM t_admin WHERE id = #{id}
+    </select>
 </mapper>

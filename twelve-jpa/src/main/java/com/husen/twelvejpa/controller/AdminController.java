@@ -6,6 +6,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
+import java.io.IOException;
+
 /**
  * Created by HuSen on 2018/10/30 10:04.
  */
@@ -19,7 +21,7 @@ public class AdminController {
     }
 
     @GetMapping("/test")
-    private AdminEntity testTransaction() {
+    private AdminEntity testTransaction() throws IOException {
         return adminService.testTransaction();
     }
 }

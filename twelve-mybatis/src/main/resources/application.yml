@@ -25,6 +25,6 @@ spring:
       remove-abandoned-timeout: 1800
       log-abandoned: false
 mybatis:
-  mapper-locations: classpath:mapping/*.xml
+  mapper-locations: classpath:mapper/*.xml
 server:
   port: 8081
