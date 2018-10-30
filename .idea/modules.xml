@@ -3,6 +3,7 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/twelve.iml" filepath="$PROJECT_DIR$/twelve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve-jpa/twelve-jpa.iml" filepath="$PROJECT_DIR$/twelve-jpa/twelve-jpa.iml" />
       <module fileurl="file://$PROJECT_DIR$/twelve-mybatis/twelve-mybatis.iml" filepath="$PROJECT_DIR$/twelve-mybatis/twelve-mybatis.iml" />
     </modules>
   </component>

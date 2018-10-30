@@ -26,4 +26,5 @@ spring:
       log-abandoned: false
 mybatis:
   mapper-locations: classpath:mapping/*.xml
-  type-aliases-package: com.husen.twelvemybatis.dao.dto
+server:
+  port: 8081

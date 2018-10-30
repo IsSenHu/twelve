@@ -6,10 +6,12 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="twelve-jpa" />
         <module name="twelve-mybatis" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="twelve-jpa" target="1.8" />
       <module name="twelve-mybatis" target="1.8" />
     </bytecodeTargetLevel>
   </component>
