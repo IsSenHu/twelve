@@ -20,6 +20,11 @@ public class AdminController {
         this.adminService = adminService;
     }
 
+    /**
+     * 查询模式+补偿模式+快速失败模式
+     * @return
+     * @throws IOException
+     */
     @GetMapping("/test")
     private AdminEntity testTransaction() throws IOException {
         return adminService.testTransaction();

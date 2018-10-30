@@ -8,11 +8,13 @@
         <outputRelativeToContentRoot value="true" />
         <module name="twelve-jpa" />
         <module name="twelve-mybatis" />
+        <module name="twelve-rabbitmq" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="twelve-jpa" target="1.8" />
       <module name="twelve-mybatis" target="1.8" />
+      <module name="twelve-rabbitmq" target="1.8" />
     </bytecodeTargetLevel>
   </component>
 </project>

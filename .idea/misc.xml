@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/twelve-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/twelve-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/pom.xml" />
       </list>
     </option>
   </component>

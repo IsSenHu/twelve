@@ -39,7 +39,6 @@ public class AdminServiceImpl implements AdminService {
         adminEntity.setCreateTime(LocalDateTime.now());
         adminEntity.setUpdateTime(LocalDateTime.now());
         adminRepository.save(adminEntity);
-        String json = "{\"id\":2333909443672015869,\"createTime\":\"2018-10-30T12:48:25\",\"updateTime\":\"2018-10-30T12:48:25\",\"adminName\":\"test1\",\"password\":\"123456\",\"adminStatus\":1}";
         try {
             HttpConnectionUtils.doPost("http://localhost:8081/saveEnable?id=" + adminEntity.getId(), null, true);
             return adminEntity;
@@ -53,7 +52,7 @@ public class AdminServiceImpl implements AdminService {
             }
             log.info("进行重试");
             try {
-                HttpConnectionUtils.doPost("http://localhost:8081/saveEnable?id=" + adminEntity.getId(), json, true);
+                HttpConnectionUtils.doPost("http://localhost:8081/saveEnable?id=" + adminEntity.getId(), null, true);
                 log.info("重试成功");
                 return adminEntity;
             }catch (IOException ie) {
