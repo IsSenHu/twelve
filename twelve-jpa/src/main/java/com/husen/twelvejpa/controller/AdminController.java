@@ -5,7 +5,6 @@ import com.husen.twelvejpa.service.AdminService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
-
 import java.io.IOException;
 
 /**
@@ -22,8 +21,8 @@ public class AdminController {
 
     /**
      * 查询模式+补偿模式+快速失败模式
-     * @return
-     * @throws IOException
+     * @return 服务结果
+     * @throws IOException IOException
      */
     @GetMapping("/test")
     private AdminEntity testTransaction() throws IOException {

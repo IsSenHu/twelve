@@ -23,9 +23,6 @@ public class MessageEntity extends BaseEntity {
     @Column(name = "create_time", nullable = false)
     private LocalDateTime createTime;
 
-    @Column(name = "repeat_time")
-    private LocalDateTime repeatTime;
-
     @Column(name = "send")
     private Boolean send;
 }

@@ -1,17 +1,20 @@
 package com.husen.twelverabbitmq.sender;
 
+import com.husen.utils.http.HttpConnectionUtils;
+import com.husen.vo.common.CommonMessageVo;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.amqp.rabbit.support.CorrelationData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
-import java.util.UUID;
 
 /**
  * Created by HuSen on 2018/10/30 14:25.
  */
 @Component
+@Slf4j
 public class Sender implements RabbitTemplate.ConfirmCallback, RabbitTemplate.ReturnCallback {
     private final RabbitTemplate rabbitTemplate;
 
@@ -29,22 +32,28 @@ public class Sender implements RabbitTemplate.ConfirmCallback, RabbitTemplate.Re
     @Override
     public void confirm(CorrelationData correlationData, boolean ack, String cause) {
         if(ack) {
+            log.info("消息发送成功，准备告知生产者消息已成功发送!");
             // 已受理
+            try {
+                HttpConnectionUtils.doGet("http://localhost:8080/ackMessage?id=" + correlationData.getId());
+            }catch (Exception e) {
+                e.printStackTrace();
+            }
         }else {
-            // 发送失败，重试
+            log.info("消息发送失败:{},{}", correlationData.getId(), cause);
         }
     }
 
     @Override
     public void returnedMessage(Message message, int replyCode, String replyText, String exchange, String routingKey) {
-        // 发生失败，重试
+        log.info("消息发送失败:{},{},{}", message, exchange, routingKey);
     }
 
-    public void send(String msg) {
-        CorrelationData correlationId = new CorrelationData(UUID.randomUUID().toString());
-        System.out.println("开始发送消息 : " + msg.toLowerCase());
-        String response = rabbitTemplate.convertSendAndReceive("topicExchange", "key", msg, correlationId).toString();
-        System.out.println("结束发送消息 : " + msg.toLowerCase());
-        System.out.println("消费者响应 : " + response + " 消息处理完成");
+    public void send(CommonMessageVo messageVo) {
+        CorrelationData correlationId = new CorrelationData(messageVo.getId().toString());
+        log.info("开始发送消息:{}", messageVo);
+        String response = rabbitTemplate.convertSendAndReceive("topicExchange", "key", messageVo.getMessage(), correlationId).toString();
+        log.info("结束消息发送:{}", messageVo);
+        log.info("消费者响应:{}，消费完成", response);
     }
 }
