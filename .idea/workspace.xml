@@ -2,27 +2,53 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a8ea8032-ab6c-4761-b27a-b148a38dbb3b" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_husen_commonHusen_2_1_SNAPSHOT.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/MessageService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/libraries/Maven__com_husen_commonHusen_1_0_SNAPSHOT.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_husen_commonHusen_2_0_SNAPSHOT.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_lettuce_lettuce_core_5_0_5_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_buffer_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_http_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_codec_socks_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_common_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_handler_proxy_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_resolver_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_epoll_linux_x86_64_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_netty_netty_transport_native_unix_common_4_1_29_Final.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_ipc_reactor_netty_0_7_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_core_3_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__io_projectreactor_reactor_test_3_1_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_reactivestreams_reactive_streams_1_0_2.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_data_redis_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_reactor_netty_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_boot_spring_boot_starter_webflux_2_0_6_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_keyvalue_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_data_spring_data_redis_2_0_11_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_context_support_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_oxm_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_springframework_spring_webflux_5_0_10_RELEASE.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_multipart_parser_1_1_0.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_synchronoss_cloud_nio_stream_storage_1_1_3.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/task/MessageTask.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/receiver/Receiver.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/twelve-redis/src/main/java/com/husen/twelveredis/controller/DuplicateRemovalController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twelve-jpa/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/AdminController.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/AdminController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/entity/message/MessageEntity.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/entity/message/MessageEntity.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twelve-mybatis/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-mybatis/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/twelve-rabbitmq/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-rabbitmq/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/TwelveJpaApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/TwelveJpaApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/sender/Sender.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/sender/Sender.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/twelve-mybatis/target/" />
     <ignored path="$PROJECT_DIR$/twelve-jpa/target/" />
     <ignored path="$PROJECT_DIR$/twelve-rabbitmq/target/" />
+    <ignored path="$PROJECT_DIR$/twelve-redis/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -72,90 +98,29 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java">
+      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twelve-mybatis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="672">
-              <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#501#502#0" expanded="true" />
-                <element signature="e#553#554#0" expanded="true" />
-                <element signature="e#717#718#0" expanded="true" />
-                <element signature="e#775#776#0" expanded="true" />
-                <element signature="e#846#847#0" expanded="true" />
-                <element signature="e#878#879#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="293">
+              <caret line="27" column="63" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="63" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/MessageService.java">
+      <file leaf-file-name="application.yml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/twelve-redis/src/main/resources/application.yml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="12" column="8" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
+            <state relative-caret-position="120">
+              <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MessageServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/impl/MessageServiceImpl.java">
+      <file leaf-file-name="DuplicateRemovalController.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/twelve-redis/src/main/java/com/husen/twelveredis/controller/DuplicateRemovalController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#534#535#0" expanded="true" />
-                <element signature="e#586#587#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageService.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/MessageService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="144">
-              <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="MessageServiceImpl.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="448">
-              <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#597#598#0" expanded="true" />
-                <element signature="e#633#634#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Sender.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/sender/Sender.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="328">
-              <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+            <state relative-caret-position="480">
+              <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -164,10 +129,10 @@
         </entry>
       </file>
       <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/twelve-jpa/pom.xml">
+        <entry file="file://$PROJECT_DIR$/twelve-redis/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="480">
-              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
+            <state relative-caret-position="336">
+              <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
             </state>
           </provider>
         </entry>
@@ -205,24 +170,30 @@
         <option value="$PROJECT_DIR$/twelve-mybatis/src/main/resources/mapper/AdminMapper.xml" />
         <option value="$PROJECT_DIR$/twelve-mybatis/src/main/java/com/husen/twelvemybatis/service/impl/AdminServiceImpl.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/impl/AdminServiceImpl.java" />
-        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml" />
         <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/config/RabbitMqConfig.java" />
         <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/config/RabbitMqConfig.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/enums/MessageStatus.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageReository.java" />
-        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/AdminController.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/entity/message/MessageEntity.java" />
         <option value="$PROJECT_DIR$/twelve-mybatis/pom.xml" />
         <option value="$PROJECT_DIR$/twelve-rabbitmq/pom.xml" />
         <option value="$PROJECT_DIR$/twelve-jpa/pom.xml" />
-        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/MessageService.java" />
-        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java" />
-        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/MessageService.java" />
         <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/receiver/Receiver.java" />
+        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/TwelveJpaApplication.java" />
+        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java" />
         <option value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/sender/Sender.java" />
+        <option value="$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/task/MessageTask.java" />
+        <option value="$PROJECT_DIR$/twelve-redis/src/main/resources/application.yml" />
+        <option value="$PROJECT_DIR$/twelve-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-redis/src/main/java/com/husen/twelveredis/controller/DuplicateRemovalController.java" />
       </list>
     </option>
   </component>
@@ -324,187 +295,92 @@
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelvejpa" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-jpa" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelvejpa" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
               <item name="twelve-mybatis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-mybatis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
+              <item name="twelve" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelverabbitmq" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelverabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="controller" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelverabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="sender" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="com" type="462c0819:PsiDirectoryNode" />
               <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelverabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
+              <item name="twelveredis" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
               <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
+              <item name="twelve-redis" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="husen" type="462c0819:PsiDirectoryNode" />
-              <item name="twelverabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="service" type="462c0819:PsiDirectoryNode" />
-              <item name="impl" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
-              <item name="twelve" type="462c0819:PsiDirectoryNode" />
-              <item name="twelve-rabbitmq" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="test" type="462c0819:PsiDirectoryNode" />
+              <item name="resources" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="twelve" type="b2602c69:ProjectViewProjectNode" />
@@ -611,7 +487,7 @@
     <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1540821750634" />
     <property name="jdk.selected.JAVA_MODULE" value="1.8" />
     <property name="last_directory_selection" value="$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="F:/1919/omsReverseOrders" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="MavenSettings" />
@@ -661,13 +537,25 @@
       <module name="twelve-mybatis" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.husen.twelvemybatis.TwelveMybatisApplication" />
     </configuration>
+    <configuration name="TwelveRabbitmqApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" temporary="true" nameIsGenerated="true">
+      <module name="twelve-rabbitmq" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.husen.twelverabbitmq.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.husen.twelverabbitmq.TwelveRabbitmqApplication" />
+    </configuration>
     <list>
       <item itemvalue="Spring Boot.TwelveMybatisApplication" />
       <item itemvalue="Spring Boot.TwelveJpaApplication" />
       <item itemvalue="Application.AdminServiceImpl" />
+      <item itemvalue="Spring Boot.TwelveRabbitmqApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Spring Boot.TwelveRabbitmqApplication" />
         <item itemvalue="Application.AdminServiceImpl" />
       </list>
     </recent_temporary>
@@ -683,12 +571,12 @@
       <option name="presentableId" value="Default" />
       <updated>1540819522728</updated>
       <workItem from="1540819523977" duration="2258000" />
-      <workItem from="1540864270559" duration="15589000" />
+      <workItem from="1540864270559" duration="21008000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="17847000" />
+    <option name="totallyTimeSpent" value="23266000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -825,13 +713,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/TwelveJpaApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="28" selection-start-column="28" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/resources/application.yml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="96">
@@ -911,33 +792,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-mybatis/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="264">
-          <caret line="11" column="21" lean-forward="true" selection-start-line="11" selection-start-column="21" selection-end-line="11" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/AdminService.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
           <caret line="10" column="16" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/config/RabbitMqConfig.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="192">
-          <caret line="8" lean-forward="true" selection-start-line="8" selection-end-line="8" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#313#314#0" expanded="true" />
-            <element signature="e#359#360#0" expanded="true" />
-            <element signature="e#457#458#0" expanded="true" />
-            <element signature="e#498#499#0" expanded="true" />
-            <element signature="e#655#656#0" expanded="true" />
-            <element signature="e#698#699#0" expanded="true" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -952,23 +810,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="168">
           <caret line="7" column="4" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="5" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="48">
-          <caret line="2" column="19" lean-forward="true" selection-start-line="2" selection-start-column="19" selection-end-line="2" selection-end-column="19" />
         </state>
       </provider>
     </entry>
@@ -1009,13 +850,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-mybatis/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="30" column="18" selection-start-line="30" selection-start-column="18" selection-end-line="30" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="191">
@@ -1030,10 +864,34 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="12" column="8" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/MessageService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="6" column="40" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/TwelveRabbitmqApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="6" column="13" selection-start-line="6" selection-start-column="13" selection-end-line="6" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/controller/MessageController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="672">
-          <caret line="28" column="27" lean-forward="true" selection-start-line="28" selection-start-column="27" selection-end-line="28" selection-end-column="27" />
+        <state relative-caret-position="480">
+          <caret line="20" column="29" selection-start-line="20" selection-start-column="18" selection-end-line="20" selection-end-column="29" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#501#502#0" expanded="true" />
@@ -1046,39 +904,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="12" column="8" selection-start-line="12" selection-start-column="4" selection-end-line="12" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/service/impl/MessageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="42" column="50" lean-forward="true" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="10" column="40" lean-forward="true" selection-start-line="10" selection-start-column="40" selection-end-line="10" selection-end-column="40" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#534#535#0" expanded="true" />
-            <element signature="e#586#587#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/MessageService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="144">
-          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        <state relative-caret-position="400">
+          <caret line="42" column="50" selection-start-line="42" selection-start-column="50" selection-end-line="42" selection-end-column="50" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -1087,8 +916,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/service/impl/MessageServiceImpl.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="448">
-          <caret line="23" lean-forward="true" selection-start-line="23" selection-end-line="23" />
+        <state relative-caret-position="472">
+          <caret line="25" column="39" lean-forward="true" selection-start-line="25" selection-start-column="39" selection-end-line="25" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#597#598#0" expanded="true" />
@@ -1097,10 +926,138 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/controller/MessageController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="384">
+          <caret line="16" lean-forward="true" selection-start-line="16" selection-end-line="16" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#534#535#0" expanded="true" />
+            <element signature="e#586#587#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="13" selection-start-line="10" selection-start-column="13" selection-end-line="10" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/config/RabbitMqConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="22" column="47" selection-start-line="22" selection-start-column="34" selection-end-line="22" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/receiver/Receiver.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="2" column="33" selection-start-line="2" selection-start-column="33" selection-end-line="2" selection-end-column="33" />
+          <folding>
+            <element signature="e#364#365#0" expanded="true" />
+            <element signature="e#382#383#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/TwelveJpaApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="6" column="17" selection-start-line="6" selection-start-column="17" selection-end-line="6" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/dao/repository/MessageRepository.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="23" selection-start-line="14" selection-start-column="4" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/twelve-rabbitmq/src/main/java/com/husen/twelverabbitmq/sender/Sender.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="328">
-          <caret line="36" column="17" lean-forward="true" selection-start-line="36" selection-start-column="17" selection-end-line="36" selection-end-column="17" />
+        <state relative-caret-position="664">
+          <caret line="56" column="49" selection-start-line="56" selection-start-column="49" selection-end-line="56" selection-end-column="49" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-jpa/src/main/java/com/husen/twelvejpa/task/MessageTask.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="30" column="54" lean-forward="true" selection-start-line="30" selection-start-column="54" selection-end-line="30" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#427#428#0" expanded="true" />
+            <element signature="e#485#486#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-mybatis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="34" selection-start-line="3" selection-start-column="22" selection-end-line="3" selection-end-column="34" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files/Java/jdk1.8.0_171/src.zip!/java/time/Duration.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-851">
+          <caret line="132" column="19" selection-start-line="132" selection-start-column="19" selection-end-line="132" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar!/org/springframework/boot/autoconfigure/data/redis/RedisProperties.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="301">
+          <caret line="78" column="29" selection-start-line="78" selection-start-column="29" selection-end-line="78" selection-end-column="29" />
+          <folding>
+            <element signature="e#1757#1758#0" expanded="true" />
+            <element signature="e#1795#1796#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/boot/spring-boot-autoconfigure/2.0.6.RELEASE/spring-boot-autoconfigure-2.0.6.RELEASE.jar!/META-INF/spring-configuration-metadata.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-redis/src/main/resources/application.yml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="120">
+          <caret line="5" column="10" selection-start-line="5" selection-start-column="10" selection-end-line="5" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-mybatis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="293">
+          <caret line="27" column="63" selection-start-line="27" selection-start-column="8" selection-end-line="27" selection-end-column="63" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-redis/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="14" column="51" lean-forward="true" selection-start-line="14" selection-start-column="51" selection-end-line="14" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/twelve-redis/src/main/java/com/husen/twelveredis/controller/DuplicateRemovalController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="480">
+          <caret line="20" lean-forward="true" selection-start-line="20" selection-end-line="20" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

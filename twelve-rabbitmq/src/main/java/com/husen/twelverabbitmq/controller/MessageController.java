@@ -5,6 +5,7 @@ import com.husen.twelverabbitmq.service.MessageService;
 import com.husen.vo.common.CommonMessageVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RestController;
 
 /**
@@ -20,7 +21,7 @@ public class MessageController {
     }
 
     @PostMapping("/sendMessage")
-    private CommonResponse<Boolean> sendMessage(CommonMessageVo messageVo) {
+    private CommonResponse<Boolean> sendMessage(@RequestBody CommonMessageVo messageVo) {
         return messageService.sendMessage(messageVo);
     }
 }

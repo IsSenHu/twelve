@@ -17,7 +17,7 @@ import javax.annotation.PostConstruct;
 @Slf4j
 public class Sender implements RabbitTemplate.ConfirmCallback, RabbitTemplate.ReturnCallback {
     private final RabbitTemplate rabbitTemplate;
-
+    private String key = "key";
     @Autowired
     public Sender(RabbitTemplate rabbitTemplate) {
         this.rabbitTemplate = rabbitTemplate;
@@ -52,8 +52,8 @@ public class Sender implements RabbitTemplate.ConfirmCallback, RabbitTemplate.Re
     public void send(CommonMessageVo messageVo) {
         CorrelationData correlationId = new CorrelationData(messageVo.getId().toString());
         log.info("开始发送消息:{}", messageVo);
-        String response = rabbitTemplate.convertSendAndReceive("topicExchange", "key", messageVo.getMessage(), correlationId).toString();
-        log.info("结束消息发送:{}", messageVo);
-        log.info("消费者响应:{}，消费完成", response);
+        rabbitTemplate.convertAndSend("topicExchange", key, messageVo.getMessage(), correlationId);
+        // 模拟消息发送失败
+        key = key.equals("key") ? "test" : "key";
     }
 }

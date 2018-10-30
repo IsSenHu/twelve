@@ -7,4 +7,10 @@ spring:
     publisher-confirms: true
     publisher-returns: true
     template:
-      mandatory: true
+      mandatory:
+    listener:
+      simple:
+        concurrency: 2
+        max-concurrency: 2
+server:
+  port: 8082

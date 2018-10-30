@@ -27,6 +27,7 @@ public class MessageServiceImpl extends Base implements MessageService {
         try {
             sender.send(messageVo);
         }catch (Exception e) {
+            e.printStackTrace();
             log.info("消息发送失败，异常信息:{}", e.getMessage());
             return commonResponse(false, Constant.FAIL);
         }
