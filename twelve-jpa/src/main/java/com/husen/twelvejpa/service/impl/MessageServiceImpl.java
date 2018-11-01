@@ -59,4 +59,13 @@ public class MessageServiceImpl extends Base implements MessageService {
             messageRepository.save(message);
         });
     }
+
+    @Override
+    public void failMessage(Long id) {
+        Optional<MessageEntity> messageEntity = messageRepository.findById(id);
+        messageEntity.ifPresent(message -> {
+            message.setSend(false);
+            messageRepository.save(message);
+        });
+    }
 }

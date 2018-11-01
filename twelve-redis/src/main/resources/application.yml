@@ -1,12 +1,13 @@
 spring:
   redis:
     host: 118.24.38.46
-    port: 3306
+    port: 6379
     password: 521428Slyt
     jedis:
       pool:
         max-idle: 300
         max-active: 600
+    database: 15
 server:
   port: 8083
 

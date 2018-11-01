@@ -11,4 +11,6 @@ public interface MessageService {
     CommonResponse<String> sendMessage(String message);
 
     void ackMessage(Long id);
+
+    void failMessage(Long id);
 }

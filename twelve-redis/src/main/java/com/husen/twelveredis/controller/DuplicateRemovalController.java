@@ -5,6 +5,7 @@ import org.springframework.data.redis.core.HyperLogLogOperations;
 import org.springframework.data.redis.core.StringRedisTemplate;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
+import reactor.core.publisher.Mono;
 
 /**
  * Created by HuSen on 2018/10/30 17:18.
@@ -19,10 +20,16 @@ public class DuplicateRemovalController {
         this.stringRedisTemplate = stringRedisTemplate;
     }
 
+    /**
+     * 一次性去重
+     * @param id 唯一ID标识
+     * @return 是否重复
+     */
     @GetMapping("/duplicateRemoval")
-    private Boolean duplicateRemoval(Long id) {
-        HyperLogLogOperations<String, String> logOperations = stringRedisTemplate.opsForHyperLogLog();
-        Long add = logOperations.add(MESSAGE_ID_LOGS, id.toString());
-        return Long.valueOf(1L).equals(add);
+    private Mono<Boolean> duplicateRemoval(Long id) {
+        return Mono.justOrEmpty(id)
+                .map(x -> stringRedisTemplate.opsForHyperLogLog().add(MESSAGE_ID_LOGS, id.toString()))
+                .map(y -> Long.valueOf(1L).equals(y))
+                .switchIfEmpty(Mono.just(Boolean.FALSE));
     }
 }

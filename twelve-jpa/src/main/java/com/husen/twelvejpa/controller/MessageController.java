@@ -27,4 +27,9 @@ public class MessageController {
     private void ackMessage(Long id) {
         messageService.ackMessage(id);
     }
+
+    @GetMapping("/failMessage")
+    private void failMessage(Long id) {
+        messageService.failMessage(id);
+    }
 }

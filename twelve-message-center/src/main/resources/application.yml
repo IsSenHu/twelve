@@ -1,0 +1,22 @@
+spring:
+  rabbitmq:
+    host: 127.0.0.1
+    port: 5672
+    username: husen
+    password: 521428
+    virtual-host: /
+    publisher-confirms: true
+    publisher-returns: true
+    template:
+      mandatory:
+    listener:
+      simple:
+        concurrency: 2
+        max-concurrency: 2
+  data:
+    mongodb:
+      host: 127.0.0.1
+      port: 27017
+      database: messageCenter
+server:
+  port: 8082
