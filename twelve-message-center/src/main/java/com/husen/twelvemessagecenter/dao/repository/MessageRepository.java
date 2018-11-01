@@ -1,9 +1,10 @@
 package com.husen.twelvemessagecenter.dao.repository;
 
 import com.husen.twelvemessagecenter.dao.mo.MessageMo;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 import org.springframework.data.mongodb.repository.MongoRepository;
 import org.springframework.stereotype.Repository;
-
 import java.util.Optional;
 
 /**
@@ -11,5 +12,7 @@ import java.util.Optional;
  */
 @Repository
 public interface MessageRepository extends MongoRepository<MessageMo, Long> {
-    Optional<MessageMo> findByMessageId(long l);
+    Optional<MessageMo> findByMessageId(long messageId);
+
+    Page<MessageMo> findAllBySendOrGetLost(boolean send, boolean getLost, Pageable pageable);
 }

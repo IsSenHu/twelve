@@ -40,11 +40,11 @@ public class MessageServiceImpl extends Base implements MessageService {
             messageEntity.setSend(false);
             messageEntity.setCreateTime(LocalDateTime.now());
             messageEntity.setUpdateTime(LocalDateTime.now());
-            messageRepository.save(messageEntity);
+//            messageRepository.save(messageEntity);
             CommonMessageVo commonMessageVo = new CommonMessageVo();
             commonMessageVo.setId(messageEntity.getId());
             commonMessageVo.setMessage(message);
-            HttpConnectionUtils.doPost("http://localhost:8082/sendMessage", JSONObject.toJSONString(commonMessageVo), true);
+            HttpConnectionUtils.doPost("http://localhost:8082/api/test", JSONObject.toJSONString(commonMessageVo), true);
         }catch (Exception e) {
             e.printStackTrace();
         }
