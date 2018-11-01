@@ -26,6 +26,7 @@ public class MessageVoToMessageMo implements Function<MessageVo, MessageMo> {
             messageMo.setExchange(messageVo.getExchange());
             messageMo.setGetLost(messageVo.getGetLost());
             messageMo.setCreateTime(messageVo.getCreateTime());
+            messageMo.setSenderClassName(messageVo.getSenderClassName());
         }
         return messageMo;
     }

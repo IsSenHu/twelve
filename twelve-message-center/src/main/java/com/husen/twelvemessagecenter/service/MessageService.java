@@ -11,4 +11,6 @@ public interface MessageService {
     void messageGetLost(MessageVo messageVo);
 
     void MessageSendSuccess(String messageId);
+
+    void messageAddTimes(MessageVo messageVo);
 }

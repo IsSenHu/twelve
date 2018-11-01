@@ -39,4 +39,9 @@ public class MessageServiceImpl implements MessageService {
     public void MessageSendSuccess(String messageId) {
         messageDao.MessageSendSuccess(messageId);
     }
+
+    @Override
+    public void messageAddTimes(MessageVo messageVo) {
+        messageDao.messageAddTimes(messageVo);
+    }
 }

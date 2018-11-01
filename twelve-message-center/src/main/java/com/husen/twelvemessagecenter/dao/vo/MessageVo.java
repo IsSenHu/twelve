@@ -1,6 +1,7 @@
 package com.husen.twelvemessagecenter.dao.vo;
 
 import com.husen.twelvemessagecenter.enums.RabbitMqMode;
+import com.husen.twelvemessagecenter.sender.Sender;
 import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -29,4 +30,6 @@ public class MessageVo implements Serializable {
     private Boolean getLost;
 
     private LocalDateTime createTime;
+
+    private String senderClassName;
 }

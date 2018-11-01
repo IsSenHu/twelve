@@ -44,7 +44,7 @@ public class MessageServiceImpl extends Base implements MessageService {
             CommonMessageVo commonMessageVo = new CommonMessageVo();
             commonMessageVo.setId(messageEntity.getId());
             commonMessageVo.setMessage(message);
-            HttpConnectionUtils.doPost("http://localhost:8082/api/test", JSONObject.toJSONString(commonMessageVo), true);
+            HttpConnectionUtils.doPost("http://localhost:8082/api/sendStudyNote", JSONObject.toJSONString(commonMessageVo), true);
         }catch (Exception e) {
             e.printStackTrace();
         }

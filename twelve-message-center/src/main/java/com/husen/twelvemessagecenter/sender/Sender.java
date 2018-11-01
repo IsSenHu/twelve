@@ -1,6 +1,7 @@
 package com.husen.twelvemessagecenter.sender;
 
 import com.alibaba.fastjson.JSON;
+import com.husen.twelvemessagecenter.dao.mo.MessageMo;
 import com.husen.twelvemessagecenter.dao.vo.MessageVo;
 import com.husen.twelvemessagecenter.service.MessageService;
 import com.husen.vo.common.CommonMessageVo;
@@ -57,4 +58,6 @@ public abstract class Sender implements RabbitTemplate.ConfirmCallback, RabbitTe
     }
 
     public abstract void send(CommonMessageVo commonMessageVo);
+
+    public abstract void sendAgain(MessageVo messageVo);
 }

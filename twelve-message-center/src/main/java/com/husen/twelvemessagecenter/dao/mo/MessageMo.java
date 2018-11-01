@@ -1,6 +1,7 @@
 package com.husen.twelvemessagecenter.dao.mo;
 
 import com.husen.twelvemessagecenter.enums.RabbitMqMode;
+import com.husen.twelvemessagecenter.sender.Sender;
 import lombok.Data;
 import org.springframework.data.mongodb.core.mapping.Document;
 import org.springframework.data.mongodb.core.mapping.Field;
@@ -43,4 +44,7 @@ public class MessageMo implements Serializable {
 
     @Field("createTime")
     private LocalDateTime createTime;
+
+    @Field("senderClassName")
+    private String senderClassName;
 }

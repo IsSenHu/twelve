@@ -4,6 +4,9 @@ import com.husen.twelvemessagecenter.dao.mo.MessageMo;
 import com.husen.twelvemessagecenter.dao.repository.MessageDao;
 import com.husen.twelvemessagecenter.dao.repository.MessageRepository;
 import com.husen.twelvemessagecenter.enums.RabbitMqMode;
+import com.husen.twelvemessagecenter.sender.Sender;
+import com.husen.twelvemessagecenter.sender.StudyNoteSenderImpl;
+import com.husen.twelvemessagecenter.utils.SpringContextUtils;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -27,6 +30,12 @@ public class TwelveMessageCenterApplicationTests {
         messageMo.setGetLost(Boolean.FALSE);
         MessageMo save = messageRepository.save(messageMo);
         System.out.println(save);
+    }
+
+    @Test
+    public void testGetBean() throws ClassNotFoundException {
+        Sender bean = SpringContextUtils.getBean(StudyNoteSenderImpl.class.getName(), Sender.class);
+        bean.sendAgain(null);
     }
 
 }

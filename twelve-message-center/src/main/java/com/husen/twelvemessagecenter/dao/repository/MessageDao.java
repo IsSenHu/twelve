@@ -1,6 +1,7 @@
 package com.husen.twelvemessagecenter.dao.repository;
 
 import com.husen.twelvemessagecenter.dao.mo.MessageMo;
+import com.husen.twelvemessagecenter.dao.vo.MessageVo;
 import com.mongodb.client.result.UpdateResult;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -33,6 +34,13 @@ public class MessageDao {
     public void MessageSendSuccess(String messageId) {
         UpdateResult result = mongoTemplate.upsert(
                 query(where("messageId").is(Long.valueOf(messageId))), Update.update("send", Boolean.TRUE), MessageMo.class
+        );
+        log.debug("UpdateResult:{}", result);
+    }
+
+    public void messageAddTimes(MessageVo messageVo) {
+        UpdateResult result = mongoTemplate.upsert(
+                query(where("messageId").is(messageVo.getMessageId())), Update.update("times", messageVo.getTimes()), MessageMo.class
         );
         log.debug("UpdateResult:{}", result);
     }
