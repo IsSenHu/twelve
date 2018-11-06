@@ -1,5 +1,6 @@
 package com.husen.twelvemessagecenter.service;
 
+import com.husen.base.TableData;
 import com.husen.twelvemessagecenter.dao.vo.MessageVo;
 
 /**
@@ -13,4 +14,6 @@ public interface MessageService {
     void MessageSendSuccess(String messageId);
 
     void messageAddTimes(MessageVo messageVo);
+
+    TableData<MessageVo> pageMessage();
 }

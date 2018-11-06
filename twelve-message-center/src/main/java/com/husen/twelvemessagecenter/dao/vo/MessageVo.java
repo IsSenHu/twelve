@@ -1,7 +1,9 @@
 package com.husen.twelvemessagecenter.dao.vo;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
+import com.fasterxml.jackson.databind.annotation.JsonSerialize;
+import com.fasterxml.jackson.databind.ser.std.ToStringSerializer;
 import com.husen.twelvemessagecenter.enums.RabbitMqMode;
-import com.husen.twelvemessagecenter.sender.Sender;
 import lombok.Data;
 import java.io.Serializable;
 import java.time.LocalDateTime;
@@ -11,6 +13,7 @@ import java.time.LocalDateTime;
  */
 @Data
 public class MessageVo implements Serializable {
+    @JsonSerialize(using = ToStringSerializer.class)
     private Long messageId;
 
     private String message;
@@ -29,6 +32,7 @@ public class MessageVo implements Serializable {
 
     private Boolean getLost;
 
+    @JsonFormat(pattern = "yyyy-MM-dd HH:ss:mm", timezone = "GMT+8")
     private LocalDateTime createTime;
 
     private String senderClassName;

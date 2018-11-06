@@ -22,7 +22,6 @@ import java.time.ZoneId;
 public class StudyNoteSenderImpl extends Sender {
     private final RabbitTemplate rabbitTemplate;
     private final MessageService messageService;
-    private boolean fail = false;
     @Autowired
     public StudyNoteSenderImpl(RabbitTemplate rabbitTemplate, MessageService messageService) {
         super(rabbitTemplate, messageService);
@@ -40,7 +39,7 @@ public class StudyNoteSenderImpl extends Sender {
             messageVo.setRabbitMqMode(RabbitMqMode.TOPIC_MODE);
             messageVo.setQueue(Constants.LQueue.test.name());
             messageVo.setExchange(Constants.Exchange.topicExchange.name());
-            messageVo.setKey(Constants.Key.key.name() + "1");
+            messageVo.setKey(Constants.Key.key.name());
             messageVo.setSend(Boolean.FALSE);
             messageVo.setTimes(1);
             messageVo.setGetLost(Boolean.FALSE);

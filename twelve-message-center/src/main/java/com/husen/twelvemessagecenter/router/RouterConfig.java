@@ -2,7 +2,9 @@ package com.husen.twelvemessagecenter.router;
 
 import com.husen.base.Base;
 import com.husen.base.CommonResponse;
+import com.husen.base.TableData;
 import com.husen.twelvemessagecenter.sender.StudyNoteSenderImpl;
+import com.husen.twelvemessagecenter.service.MessageService;
 import com.husen.vo.common.CommonMessageVo;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -22,10 +24,11 @@ import static org.springframework.web.reactive.function.server.RouterFunctions.r
 @Slf4j
 public class RouterConfig extends Base {
     private final StudyNoteSenderImpl studyNoteSender;
-
+    private final MessageService messageService;
     @Autowired
-    public RouterConfig(StudyNoteSenderImpl studyNoteSender) {
+    public RouterConfig(StudyNoteSenderImpl studyNoteSender, MessageService messageService) {
         this.studyNoteSender = studyNoteSender;
+        this.messageService = messageService;
     }
 
     @Bean
