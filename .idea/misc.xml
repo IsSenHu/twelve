@@ -4,6 +4,10 @@
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/twelve-mybatis/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-jpa/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-rabbitmq/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-redis/pom.xml" />
+        <option value="$PROJECT_DIR$/twelve-message-center/pom.xml" />
       </list>
     </option>
   </component>

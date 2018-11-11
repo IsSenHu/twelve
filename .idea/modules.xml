@@ -3,7 +3,11 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/twelve.iml" filepath="$PROJECT_DIR$/twelve.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve-jpa/twelve-jpa.iml" filepath="$PROJECT_DIR$/twelve-jpa/twelve-jpa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve-message-center/twelve-message-center.iml" filepath="$PROJECT_DIR$/twelve-message-center/twelve-message-center.iml" />
       <module fileurl="file://$PROJECT_DIR$/twelve-mybatis/twelve-mybatis.iml" filepath="$PROJECT_DIR$/twelve-mybatis/twelve-mybatis.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve-rabbitmq/twelve-rabbitmq.iml" filepath="$PROJECT_DIR$/twelve-rabbitmq/twelve-rabbitmq.iml" />
+      <module fileurl="file://$PROJECT_DIR$/twelve-redis/twelve-redis.iml" filepath="$PROJECT_DIR$/twelve-redis/twelve-redis.iml" />
     </modules>
   </component>
 </project>
