@@ -27,3 +27,7 @@ spring:
 mybatis:
   mapper-locations: classpath:mapping/*.xml
   type-aliases-package: com.husen.twelvemybatis.dao.dto
+test:
+  self:
+    username: admin123
+    password: 123456123
